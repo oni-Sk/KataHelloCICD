@@ -34,10 +34,10 @@ jobs:
           tags: onisk/katahellocicd:linttest
 
       - name: Run linter
-        run: docker run onisk/katahellocicd:test deno lint
+        run: docker run onisk/katahellocicd:linttest deno lint
 
       - name: Run tests
-        run: docker run --rm onisk/katahellocicd:test deno test
+        run: docker run --rm onisk/katahellocicd:linttest deno test
         
       - name: Push
         uses: docker/build-push-action@v2
