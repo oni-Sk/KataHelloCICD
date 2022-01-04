@@ -4,4 +4,4 @@ WORKDIR /src
 
 COPY . .
 
-CMD ["deno", "src/main/hello.ts"]
+CMD ["deno", "main/hello.ts"]
