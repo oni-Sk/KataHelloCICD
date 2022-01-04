@@ -1,7 +1,7 @@
 FROM denoland/deno:1.10.3
 
-WORKDIR /src
-
 COPY . .
 
-CMD ["deno", "main/hello.ts"]
+WORKDIR /src
+
+CMD ["deno", "run", "main/hello.ts"]
